@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.mymac.week6_files_demo2.MainActivity">
+
+    <EditText
+        android:id="@+id/input_title_note_ma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Note Title"/>
+
+    <EditText
+        android:id="@+id/input_body_note_ma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" Note Body"/>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:onClick="saveNote"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Load"
+            android:onClick="loadNote"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_ma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hi" />
+
+</LinearLayout>
